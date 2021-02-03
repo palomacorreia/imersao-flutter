@@ -2,6 +2,7 @@ import 'dart:html';
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:imersao_flutter/questions_screen.dart';
 
 class InitialScreen extends StatelessWidget {
   @override
@@ -29,7 +30,12 @@ class InitialScreen extends StatelessWidget {
           ),
           FlatButton(
             onPressed: () {
-              print("Começar");
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => TriviaScreen(),
+                ),
+              );
             },
             child: Text(
               'Começar',
