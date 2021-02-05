@@ -1,4 +1,3 @@
-import 'dart:html';
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
@@ -32,9 +31,7 @@ class InitialScreen extends StatelessWidget {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(
-                  builder: (context) => TriviaScreen(),
-                ),
+                MaterialPageRoute(builder: (context) => TriviaScreen()),
               );
             },
             child: Text(
